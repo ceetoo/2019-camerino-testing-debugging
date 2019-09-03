@@ -1,5 +1,6 @@
 from math import isclose
 import numpy
+#from numpy import assert_array_equal
 
 def test_floating():
     assert isclose(1.1 + 2.2, 3.3)
@@ -12,6 +13,7 @@ def test_arraysum():
     y = numpy.array([2,2])
     z = numpy.array([3,3])
     assert all(x + y == z)
+    #assert_array_equal(x + y, z)
 
 
 def test_arithmetic():
